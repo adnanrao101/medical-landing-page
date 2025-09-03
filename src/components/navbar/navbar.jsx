@@ -18,7 +18,7 @@ function Navbar() {
                         </div>
 
                         <div class="md4">
-                            <span>Opening Time</span>
+                            <span class="s1">Opening Time</span>
                             <span>Mon-Fri 8:30AM-6PM</span>
                         </div>
                     </div>
@@ -29,7 +29,7 @@ function Navbar() {
                         </div>
 
                         <div class='md4'>
-                            <span>Phone</span>
+                            <span class="s1">Phone</span>
                             <span>+9211111111</span>
                         </div>
 
@@ -40,7 +40,7 @@ function Navbar() {
                         </div>
 
                         <div class="md4">
-                            <span>Location</span>
+                            <span class="s1">Location</span>
                             <span>9 Earl Grey St, United Kingdom</span>
                         </div>
                     </div>

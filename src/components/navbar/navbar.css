@@ -43,7 +43,7 @@ header{
     height: 20px;
     border-radius: 10px;
     color: aliceblue;
-    background-color: green;
+    background-color: #1D5C5C;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -58,6 +58,11 @@ header{
 
 }
 
+.s1{
+    color: gray;
+    margin-bottom: 10px;
+}
+
 ion-icon{
     font-size: 50px;
 }
@@ -68,7 +73,7 @@ ion-icon{
 
 
 #D1{
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +89,7 @@ a{
 }
 
 #D2{
-    width: 40%;
+    width: 30%;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -98,4 +103,50 @@ button{
     border: none;
     margin-right: 50px;
 
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;   /* sirf content jitna width lega */
+}
+
+/* Dropdown button */
+.dropbtn {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 12px;   /* thoda spacing normal links jesi */
+  width: auto;         /* extra width na le */
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 140px;   /* apni chhoti width */
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;   /* text wrap na ho */
+}
+
+/* Hover effect */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
