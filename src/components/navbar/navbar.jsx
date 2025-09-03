@@ -1,5 +1,6 @@
 import './navbar.css'
 import Logo from './City-Dental-Care.svg'
+
 function Navbar() {
     return (
         <>
