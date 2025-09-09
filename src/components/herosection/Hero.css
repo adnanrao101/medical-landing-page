@@ -1,0 +1,156 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background: #000000;
+  position: relative;
+}
+
+/* Left Content */
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #013220;
+}
+
+.hero h1 span {
+  color: #1abc9c; /* Green highlight */
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.btn-primary {
+  width: 250px;
+  background: #00695c;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #004d40;
+}
+
+.btn-outline {
+  width: 250px;
+  background: transparent;
+  border: 2px solid #00695c;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #00695c;
+  color: #fff;
+}
+
+/* Right Image (Doctor) */
+.hero::after {
+  content: "";
+  background: url("./pic1.png") center/cover no-repeat; /* apna doctor img lagana */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+/* Overlay Shade */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 77, 64, 0.6); /* green overlay */
+  z-index: 1;
+}
+
+/* Reviews Section */
+.reviews {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.review-avatars img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: -10px;
+}
+
+.google-logo {
+  width: 70px;
+}
+
+.review-text p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.review-stars {
+  font-size: 1rem;
+  color: #fbc02d;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero::after,
+  .hero::before {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
