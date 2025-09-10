@@ -29,14 +29,17 @@ function Hero() {
             <img src={user3} alt="user" />
           </div>
           <div className="review-text">
+            <span>GOOGLE</span>
             {/* <img src={googleLogo} alt="Google" className="google-logo" /> */}
             <p>
               Based on <span>200 reviews</span>
             </p>
           </div>
           <div className="review-stars">
-            ⭐⭐⭐⭐⭐ <span>4.8 out of 5</span>
+            <span className="rating-text">4.8 out of 5</span>
+            <span className="stars">⭐⭐⭐⭐⭐</span>
           </div>
+
         </div>
       </div>
     </section>
