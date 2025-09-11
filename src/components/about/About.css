@@ -82,6 +82,31 @@
   padding: 20px 0;
 }
 
+.book-btn{
+  width: 60%;
+  font-weight: bold;
+  cursor: grab;
+}
+
+.phone-btn {
+  width: 40%;
+  background-color: #b7ecec;
+  border: 1px solid #00695c;
+  color: #013832;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: grab;
+  transition: all 0.3s ease; /* smooth hover effect */
+}
+
+.phone-btn:hover {
+  background-color: #00695c; /* hover pe background change */
+  color: #ffffff;           /* text ka color white */
+  border-color: #004d40;    /* border thoda dark */
+  transform: scale(1.05);   /* halka sa zoom effect */
+}
+
+
 /* ---------------- About-right ------------- */
 
 
